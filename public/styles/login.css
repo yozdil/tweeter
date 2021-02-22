@@ -74,7 +74,6 @@ body {
 }
 
 .credentials {
-  display: flexbox;
   transition: all 0.75s ease-out;
 }
 
@@ -115,7 +114,7 @@ body {
 }
 
 .loginSignUpSeparator .textInSeparator {
-  background-color: #fff;
+  background-color: #f4f1e0;
   padding: 0 0.5em;
   position: inherit;
   color: #585858;
@@ -150,7 +149,7 @@ body {
   background-color: #b7babb;
   border: none;
   font-weight: bold;
-  color: white;
+  color: #343A35;
   cursor: pointer;
   border-radius: 30px;
   font-weight: bolder;
