@@ -1,9 +1,9 @@
 header {
   height: 400px;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #f4f1e0;
   background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */  
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,15 +15,19 @@ header {
 
 header img {
   border-style: solid;
-  border-color: #AD0F00;
+  border-color: rgba(173, 15, 0, 0.75);
   min-height: 200px;
   width: 200px;
-  border-radius: 30px;
+  border-radius: 50%;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  background-color: #F4F1E0;
+  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 header h2 {
   margin: 0px 0px 0px 0px;
   padding: 0;
   box-sizing: border-box;
+  color: #524D40;
 }
