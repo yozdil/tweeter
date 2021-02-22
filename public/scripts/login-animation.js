@@ -12,8 +12,8 @@ const heading = document.querySelector(".info h1");
 
 //Moving Animation Event
 container.addEventListener("mousemove", (e) => {
-  let xAxis = (window.innerWidth / 2 - e.pageX) / 90;
-  let yAxis = (window.innerHeight / 2 - e.pageY) / 90;
+  let xAxis = (window.innerWidth / 2 - e.pageX) / 120;
+  let yAxis = (window.innerHeight / 2 - e.pageY) / 120;
   card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
 });
 
@@ -21,13 +21,13 @@ container.addEventListener("mousemove", (e) => {
 container.addEventListener("mouseenter", (e) => {
   card.style.transition = "none";
   // Popout
-  title.style.transform = "translateZ(150px)";
-  bird.style.transform = "translateZ(150px) rotateZ(8deg";
-  heading.style.transform = "translateZ(100px)";
-  credentials.style.transform = "translateZ(80px)";
-  login.style.transform = "translateZ(60px)";
-  signup.style.transform = "translateZ(60px)";
-  signup.style.transform = "translateZ(60px)";
+  title.style.transform = "translateZ(100px)";
+  bird.style.transform = "translateZ(100px) rotateZ(8deg";
+  heading.style.transform = "translateZ(80px)";
+  credentials.style.transform = "translateZ(60px)";
+  login.style.transform = "translateZ(30px)";
+  signup.style.transform = "translateZ(30px)";
+  signup.style.transform = "translateZ(30px)";
 });
 
 // Animate Out
