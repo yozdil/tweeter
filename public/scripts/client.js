@@ -4,3 +4,7 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+// Auto-resize to fit content
+$(document).ready(function () {
+  $("textarea").autoResize();
+});
