@@ -11,6 +11,7 @@ body {
   align-items: center;
   justify-content: center;
   perspective: 1000px;
+  background-color: #f4f1e0;
 }
 
 .container {
