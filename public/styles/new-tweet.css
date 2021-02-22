@@ -1,0 +1,52 @@
+.new-tweet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  background-color: #e19928;
+  background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+#tweet-text {
+  outline: none;
+  overflow: auto;
+  border: none;
+  border-radius: 30px;
+  margin: 1rem;
+  margin-bottom: 0rem;
+  padding: 0.9rem;
+  background-color: #f4f1e0;
+}
+
+.button-counter {
+  width: 300px;
+  padding: 1rem 0rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  align-self: flex-end;
+  color: #f4f1e0;
+}
+
+form button {
+  width: 50%;
+  padding: 0.7rem 0rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bolder;
+  background-color: #ad0f00;
+  color: #f4f1e0;
+}
