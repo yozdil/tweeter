@@ -9,6 +9,8 @@ nav {
     rgba(225, 153, 40, 0.75),
     rgba(173, 15, 0, 0.75)
   );
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0px 0px 200px rgba(0, 0, 0, 0.2);
+
 }
 
 nav span {
