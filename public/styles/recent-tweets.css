@@ -1,1 +1,85 @@
 /* some styling here for the recent tweets container */
+#tweet-container {
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+}
+
+article.recent-tweets {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  color: #343A35;
+  background-color: #f4f1e0;
+  background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+article.recent-tweets:hover {
+  z-index: 3;
+}
+
+.tweetpost {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: groove rgba(52, 58, 53, 0.75) 2px;
+  color: #343A35;
+}
+.tweeter-profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.tweetpost img {
+  margin-right: 1rem;
+  padding: 0.1rem;
+  height: 4rem;
+  width: 4rem;
+  border-style: solid;
+  border-color: rgba(173, 15, 0, 0.75);
+  border-radius: 50%;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2), 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: none;
+  color: #343A35;
+}
+
+.recent-tweets footer {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tweet-date {
+  font-size: small;
+}
+
+/* {
+  "user": {
+    "name": "Newton",
+    "avatars": "https://i.imgur.com/73hZDYK.png",
+    "handle": "@SirIsaac"
+  },
+  "content": {
+    "text": "If I have seen further it is by standing on the shoulders of giants"
+  },
+  "created_at": 1613821770770
+} */
