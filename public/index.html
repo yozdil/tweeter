@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/recent-tweets.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -50,7 +51,7 @@
     <!-- Page-specific (main) content here -->
     <header class="profile">
       <div>
-        <img src="./images/bird-head.png" />
+        <img id="profile-pic" src="./images/bird-head.png" />
       </div>
       <br />
       <div>
@@ -75,22 +76,32 @@
           </div>
         </form>
       </section>
-      <section class="tweets">
+      <section id="tweet-container">
         <!-- Validate classes & names -->
 
         <article class="recent-tweets">
-          <header>
-            <h2>Dingo</h2>
+          <header class="tweetpost">
+            <div class="tweeter-profile">
+              <img src="https://i.imgur.com/73hZDYK.png" alt="Newton" />
+              <h3>Mr. Newton</h3>
+            </div>
+            <h3>@SirIsaac</h3>
           </header>
           <div class="content">
-            <ul>
-              <li><span>Species: </span>dog</li>
-              <li><span>Age: </span>1</li>
-            </ul>
+            <p>
+              If I have seen further it is by standing on the shoulders of
+              giants
+            </p>
           </div>
-          <footer>Dingo is a dog and is 1 years old</footer>
+          <footer>
+            <p class="tweet-date">10 days ago</p>
+            <div class="tweet-reactions">
+              <i class="fab fa-font-awesome-flag"></i>
+              <i class="fas fa-retweet"></i>
+              <i class="fas fa-heart"></i>
+            </div>
+          </footer>
         </article>
-
       </section>
     </main>
   </body>
