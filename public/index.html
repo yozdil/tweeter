@@ -36,7 +36,10 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="./scripts/client.js"></script>
-    <script type="text/javascript" src="./scripts/composer-char-counter.js"></script>
+    <script
+      type="text/javascript"
+      src="./scripts/composer-char-counter.js"
+    ></script>
   </head>
 
   <body>
@@ -59,9 +62,9 @@
       </div>
     </header>
     <main class="container">
-      <section class="new-tweet">
+      <section class="tweets">
         <h2>Compose Tweet</h2>
-        <form action="/tweets/" method="POST">
+        <form class= "tweetBox" action="/tweets/" method="POST">
           <!-- <label for="tweet-text">What are you humming about?</label> -->
           <textarea
             placeholder="What are you humming about?"
@@ -69,41 +72,27 @@
             id="tweet-text"
           ></textarea>
           <div class="button-counter">
-            <button type="submit"><i class="fas fa-feather-alt"></i> Tweet</button>
+            <button type="submit">
+              <i class="fas fa-feather-alt"></i> Tweet
+            </button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
       </section>
-      <h3>What is Lorem Ipsum?</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Nunc eget lorem
-        dolor sed. Egestas erat imperdiet sed euismod nisi porta. Quis eleifend
-        quam adipiscing vitae proin sagittis nisl rhoncus. Consectetur a erat
-        nam at lectus urna. Id donec ultrices tincidunt arcu non sodales neque
-        sodales ut. Amet risus nullam eget felis. Id cursus metus aliquam
-        eleifend mi in nulla posuere. Faucibus interdum posuere lorem ipsum
-        dolor. Consectetur purus ut faucibus pulvinar elementum integer enim
-        neque volutpat. Elit sed vulputate mi sit amet. Facilisis gravida neque
-        convallis a cras semper.
-      </p>
-      <p>
-        Arcu dictum varius duis at. Velit dignissim sodales ut eu sem integer
-        vitae justo eget. Vestibulum morbi blandit cursus risus at. Sagittis
-        aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc.
-        Condimentum lacinia quis vel eros donec. Maecenas volutpat blandit
-        aliquam etiam erat velit scelerisque in dictum. Ultricies leo integer
-        malesuada nunc vel risus commodo viverra. At urna condimentum mattis
-        pellentesque id nibh tortor id. Sit amet porttitor eget dolor morbi non
-        arcu risus. Quam pellentesque nec nam aliquam. Massa tempor nec feugiat
-        nisl pretium fusce. Scelerisque purus semper eget duis at tellus at.
-        Condimentum mattis pellentesque id nibh tortor id. Ipsum faucibus vitae
-        aliquet nec. Mattis nunc sed blandit libero volutpat sed cras ornare.
-        Placerat orci nulla pellentesque dignissim. Sed odio morbi quis commodo
-        odio aenean sed. Bibendum enim facilisis gravida neque convallis a.
-        Viverra vitae congue eu consequat ac felis donec. Sed felis eget velit
-        aliquet sagittis id consectetur purus.
-      </p>
+      <section class="tweets">
+        <!-- Validate classes & names -->
+        <article class="tweets"> 
+          <h2>Recent</h2>
+          <article class="tweetBox">
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <p id="tweet-text">
+              Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Nunc eget lorem dolor sed. Egestas
+              erat imperdiet sed euismod nisi porta. Quis eleifend
+            </p>
+          </article>
+        </article>
+      </section>
     </main>
   </body>
 </html>
