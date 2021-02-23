@@ -6,6 +6,7 @@
 }
 
 article.recent-tweets {
+  transition: all 0.5s ease;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,7 +20,7 @@ article.recent-tweets {
 }
 
 article.recent-tweets:hover {
-  z-index: 3;
+  transform: scale(1.03);
 }
 
 .tweetpost {
@@ -71,15 +72,3 @@ article.recent-tweets:hover {
 .tweet-date {
   font-size: small;
 }
-
-/* {
-  "user": {
-    "name": "Newton",
-    "avatars": "https://i.imgur.com/73hZDYK.png",
-    "handle": "@SirIsaac"
-  },
-  "content": {
-    "text": "If I have seen further it is by standing on the shoulders of giants"
-  },
-  "created_at": 1613821770770
-} */
