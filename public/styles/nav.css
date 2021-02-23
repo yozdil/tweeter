@@ -22,3 +22,30 @@ nav span {
   top: 1em;
   left: 1.2em;
 }
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1000px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 250px;
+    width: 100%;
+    background: linear-gradient(
+      to right,
+      rgba(225, 153, 40, 0.75),
+      rgba(173, 15, 0, 0.75)
+    );
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0px 0px 200px rgba(0, 0, 0, 0.2);
+  }
+  nav span {
+    color: #f4f1ec;
+    text-shadow: 2px 2px rgba(173, 15, 0, 0.75);
+    font-family: "Poppins";
+    font-size: 300%;
+    font-weight: bold;
+    position: absolute;
+    top: 1.2em;
+    left: 1em;
+  }
+}
