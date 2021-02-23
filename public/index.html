@@ -36,10 +36,6 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="./scripts/client.js"></script>
-    <script
-      type="text/javascript"
-      src="./scripts/composer-char-counter.js"
-    ></script>
   </head>
 
   <body>
@@ -52,7 +48,7 @@
       <!-- For now when we click on the tweeter, we are directed to login -->
     </nav>
     <!-- Page-specific (main) content here -->
-    <header>
+    <header class="profile">
       <div>
         <img src="./images/bird-head.png" />
       </div>
@@ -62,9 +58,9 @@
       </div>
     </header>
     <main class="container">
-      <section class="tweets">
+      <section class="new-tweets">
         <h2>Compose Tweet</h2>
-        <form class= "tweetBox" action="/tweets/" method="POST">
+        <form class="tweet-form" action="/tweets/" method="POST">
           <!-- <label for="tweet-text">What are you humming about?</label> -->
           <textarea
             placeholder="What are you humming about?"
@@ -79,19 +75,22 @@
           </div>
         </form>
       </section>
-      <section class="recent-tweets">
+      <section class="tweets">
         <!-- Validate classes & names -->
-        <article class="tweets"> 
-          <h2>Recent</h2>
-          <article class="tweetBox">
-            <h3>Lorem ipsum dolor sit amet</h3>
-            <p id="tweet-text">
-              Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Nunc eget lorem dolor sed. Egestas
-              erat imperdiet sed euismod nisi porta. Quis eleifend
-            </p>
-          </article>
+
+        <article class="recent-tweets">
+          <header>
+            <h2>Dingo</h2>
+          </header>
+          <div class="content">
+            <ul>
+              <li><span>Species: </span>dog</li>
+              <li><span>Age: </span>1</li>
+            </ul>
+          </div>
+          <footer>Dingo is a dog and is 1 years old</footer>
         </article>
+
       </section>
     </main>
   </body>
