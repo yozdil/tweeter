@@ -14,6 +14,7 @@
 }
 
 #profile-pic {
+  transition: all 0.5s ease;
   border-style: solid;
   border-color: rgba(173, 15, 0, 0.75);
   min-height: 200px;
@@ -23,6 +24,9 @@
   background-color: #f4f1e0;
   background-image: url("https://www.transparenttextures.com/patterns/arches.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+#profile-pic:hover {
+  transform: scale(1.03);
 }
 
 header h2 {
