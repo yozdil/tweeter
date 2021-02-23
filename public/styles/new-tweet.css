@@ -1,11 +1,11 @@
-.tweets {
+.new-tweets {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.tweetBox {
+.tweet-form {
   display: flex;
   flex-direction: column;
   justify-content: center;

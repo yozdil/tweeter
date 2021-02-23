@@ -1,4 +1,4 @@
-header {
+.profile {
   height: 400px;
   width: 100%;
   background-color: #f4f1e0;
@@ -20,7 +20,7 @@ header img {
   width: 200px;
   border-radius: 50%;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
-  background-color: #F4F1E0;
+  background-color: #f4f1e0;
   background-image: url("https://www.transparenttextures.com/patterns/arches.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
@@ -29,9 +29,8 @@ header h2 {
   margin: 0px 0px 0px 0px;
   padding: 0;
   box-sizing: border-box;
-  color: #524D40;
+  color: #524d40;
 }
-
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 1000px) {
@@ -56,16 +55,16 @@ header h2 {
     width: 350px;
     border-radius: 50%;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
-    background-color: #F4F1E0;
+    background-color: #f4f1e0;
     background-image: url("https://www.transparenttextures.com/patterns/arches.png");
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   }
-  
+
   header h2 {
     margin: 0px 0px 0px 0px;
     padding: 0;
     box-sizing: border-box;
-    color: #524D40;
+    color: #524d40;
     font-size: 50px;
   }
 }
