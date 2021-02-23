@@ -10,5 +10,5 @@ $(document).ready(function () {
 
       $(".counter").text(counter - charCount);
     })
-    // .keyup();
+    .keyup();
 });
