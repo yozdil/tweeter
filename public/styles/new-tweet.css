@@ -21,11 +21,13 @@ form {
   outline: none;
   overflow: auto;
   border: none;
-  border-radius: 30px;
+  border-radius: 20px;
   margin: 1rem;
   margin-bottom: 0rem;
   padding: 0.9rem;
   background-color: #f4f1e0;
+  background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .button-counter {
