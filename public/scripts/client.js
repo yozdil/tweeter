@@ -5,11 +5,14 @@
  */
 
 /**
- * Resizes the container for a new tweet
+ * Resizes the container for tweets
  * see auto-resizer.js
  */
 $(document).ready(function () {
   $("textarea").autoResize();
+});
+$(document).ready(function () {
+  $(".recent-tweets").autoResize();
 });
 
 /**
@@ -101,41 +104,34 @@ const createTweetElement = (tweetObj) => {
  * @returns {object}
  */
 const renderTweets = (tweetsArr) => {
-  let sorted = tweetsArr.sort((a, b) => a.created_at - b.created_at);
-  $.each(sorted, (i, tweetObj) => {
+  let timeArray = tweetsArr.sort((a, b) => a.created_at - b.created_at).reverse();
+  $.each(timeArray, (i, tweetObj) => {
     // creates an article element out of each object and appends
     // it to the page section
     $("#tweets-container").append(createTweetElement(tweetObj));
   });
 };
 
-// CALL THE FUNCTION TO LOAD DB
+/**
+ * Fetching tweets with Ajax
+ * On a successful fetch renderTweets the returning data
+ */
 $(document).ready(function () {
-  renderTweets([
-    {
-      user: {
-        name: "Newton",
-        avatars: "https://i.imgur.com/73hZDYK.png",
-        handle: "@SirIsaac",
-      },
-      content: {
-        text:
-          "If I have seen further it is by standing on the shoulders of giants",
-      },
-      created_at: 1613821770770,
-    },
-    {
-      user: {
-        name: "Descartes",
-        avatars: "https://i.imgur.com/nlhLi3I.png",
-        handle: "@rd",
-      },
-      content: {
-        text: "Je pense , donc je suis",
-      },
-      created_at: 1613908170770,
-    },
-  ]);
+  const url = "http://localhost:8080/tweets"
+  $.ajax({
+    url,
+    method: 'GET',
+  })
+    .done((data) => {
+      // success! we're getting the data back :)
+      console.log(data);
+      renderTweets(data);
+
+    })
+    .fail((err) => {
+      // fail case
+      console.log(err.message);
+    })
 });
 
 /**
