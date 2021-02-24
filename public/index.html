@@ -49,60 +49,64 @@
       <!-- For now when we click on the tweeter, we are directed to login -->
     </nav>
     <!-- Page-specific (main) content here -->
-    <header class="profile">
-      <div>
-        <img id="profile-pic" src="./images/bird-head.png" />
-      </div>
-      <br />
-      <div>
-        <h2>Mr. Toucan</h2>
-      </div>
-    </header>
-    <main class="container">
-      <section class="new-tweets">
-        <h2>Compose Tweet</h2>
-        <form class="tweet-form" action="/tweets/" method="POST">
-          <!-- <label for="tweet-text">What are you humming about?</label> -->
-          <textarea
-            placeholder="What are you humming about?"
-            name="text"
-            id="tweet-text"
-          ></textarea>
-          <div class="button-counter">
-            <button type="submit">
-              <i class="fas fa-feather-alt"></i> Tweet
-            </button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
-      </section>
-      <section id="tweet-container">
-        <!-- Validate classes & names -->
+    <div id="main-content">
+      <header class="profile">
+        <div>
+          <img id="profile-pic" src="./images/bird-head.png" />
+        </div>
+        <br />
+        <div>
+          <h2>Mr. Toucan</h2>
+        </div>
+      </header>
+      <main class="container">
+        <section class="new-tweets">
+          <h2>Compose Tweet</h2>
+          <form class="tweet-form" action="/tweets/" method="POST">
+            <!-- <label for="tweet-text">What are you humming about?</label> -->
+            <textarea
+              placeholder="What are you humming about?"
+              name="text"
+              id="tweet-text"
+            ></textarea>
+            <div class="button-counter">
+              <button type="submit">
+                <i class="fas fa-feather-alt"></i> Tweet
+              </button>
+              <output name="counter" class="counter" for="tweet-text"
+                >140</output
+              >
+            </div>
+          </form>
+        </section>
+        <section id="tweet-container">
+          <!-- Validate classes & names -->
 
-        <article class="recent-tweets">
-          <header class="tweetpost">
-            <div class="tweeter-profile">
-              <img src="https://i.imgur.com/73hZDYK.png" alt="Newton" />
-              <h3>Mr. Newton</h3>
+          <article class="recent-tweets">
+            <header class="tweetpost">
+              <div class="tweeter-profile">
+                <img src="https://i.imgur.com/73hZDYK.png" alt="Newton" />
+                <h3>Mr. Newton</h3>
+              </div>
+              <h3 class="profile-link">@SirIsaac</h3>
+            </header>
+            <div class="content">
+              <p>
+                If I have seen further it is by standing on the shoulders of
+                giants
+              </p>
             </div>
-            <h3 class="profile-link">@SirIsaac</h3>
-          </header>
-          <div class="content">
-            <p>
-              If I have seen further it is by standing on the shoulders of
-              giants
-            </p>
-          </div>
-          <footer>
-            <p class="tweet-date">10 days ago</p>
-            <div class="tweet-reactions">
-              <i class="fab fa-font-awesome-flag"></i>
-              <i class="fas fa-retweet"></i>
-              <i class="fas fa-heart"></i>
-            </div>
-          </footer>
-        </article>
-      </section>
-    </main>
+            <footer>
+              <p class="tweet-date">10 days ago</p>
+              <div class="tweet-reactions">
+                <i class="fab fa-font-awesome-flag"></i>
+                <i class="fas fa-retweet"></i>
+                <i class="fas fa-heart"></i>
+              </div>
+            </footer>
+          </article>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
