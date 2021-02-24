@@ -49,6 +49,7 @@
       <!-- For now when we click on the tweeter, we are directed to login -->
     </nav>
     <!-- Page-specific (main) content here -->
+    <!-- Profile -->
     <div id="main-content">
       <header class="profile">
         <div>
@@ -59,16 +60,19 @@
           <h2>Mr. Toucan</h2>
         </div>
       </header>
+
       <main class="container">
+        <!-- Compose Tweet -->
         <section class="new-tweets">
           <h2>Compose Tweet</h2>
           <form class="tweet-form" action="/tweets/" method="POST">
-            <!-- <label for="tweet-text">What are you humming about?</label> -->
             <textarea
               placeholder="What are you humming about?"
               name="text"
               id="tweet-text"
             ></textarea>
+            <!-- Error -->
+            <span id="alert" hidden>ERROR</span>
             <div class="button-counter">
               <button id="post-tweet" type="submit">
                 <i class="fas fa-feather-alt"></i> Tweet
@@ -79,6 +83,8 @@
             </div>
           </form>
         </section>
+
+        <!-- Tweets -->
         <section id="tweets-container">
           <!-- Any tweet gets posted here! -->
         </section>
