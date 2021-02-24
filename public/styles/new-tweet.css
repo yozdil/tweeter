@@ -58,3 +58,14 @@ form button {
   background-color: #ad0f00;
   color: #f4f1e0;
 }
+
+/* The alert message box */
+#alert {
+  width: 100%;
+  padding: 20px;
+  background-color: #AD0F00;
+  color: #f4f1e0;
+  margin-bottom: 15px;
+  font-weight: lighter;
+  font-size: 80%;
+}
