@@ -25,27 +25,26 @@ $(document).ready(function () {
     .keyup();
 });
 
-
 // ****************DON'T FORGET THE DATE!!!!!! RIGHT NOW ITS IN MS FORMAT!!!!!
-const createTweetElement = (obj) => {
-  // Takes in a tweet object
-return `
+const createTweetElement = (tweetObj) => {
+  // Takes in a tweet tweetObject
+  return `
   <br>
   <article class="recent-tweets">
   <header class="tweetpost">
     <div class="tweeter-profile">
-      <img src=${obj.user.avatars} alt="Newton" />
-      <h3>${obj.user.name}</h3>
+      <img src=${tweetObj.user.avatars} alt="Newton" />
+      <h3>${tweetObj.user.name}</h3>
     </div>
-    <h3 class="profile-link">${obj.user.handle}</h3>
+    <h3 class="profile-link">${tweetObj.user.handle}</h3>
   </header>
   <div class="content">
     <p>
-      ${obj.content.text}
+      ${tweetObj.content.text}
     </p>
   </div>
   <footer>
-    <p class="tweet-date">${obj.created_at}</p>
+    <p class="tweet-date">${tweetObj.created_at}</p>
     <div class="tweet-reactions">
       <i class="fab fa-font-awesome-flag"></i>
       <i class="fas fa-retweet"></i>
@@ -53,6 +52,15 @@ return `
     </div>
   </footer>
 </article>
-<br>`
+<br>`;
   // returns a tweet <article> element
+};
+
+// LOOP THROUGH THE ARRAY OF TWEET OBJECTS
+const renderTweets = (tweetsArr) => {
+  $.each(tweetsArr, (i, tweetObj) => {
+    // creates an article element out of each object and appends
+    // it to the page section
+    $("#tweets-container").append(createTweetElement(tweetObj));
+  });
 };
