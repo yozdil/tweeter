@@ -69,6 +69,8 @@ article.recent-tweets:hover > .tweetpost > .profile-link {
   padding-right: 1rem;
   margin-top: none;
   color: #343a35;
+  word-break: break-word;
+
 }
 
 .recent-tweets footer {
