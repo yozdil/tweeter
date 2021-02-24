@@ -25,6 +25,8 @@ $(document).ready(function () {
     .keyup();
 });
 
+
+// ****************DON'T FORGET THE DATE!!!!!! RIGHT NOW ITS IN MS FORMAT!!!!!
 const createTweetElement = (obj) => {
   // Takes in a tweet object
 return `
