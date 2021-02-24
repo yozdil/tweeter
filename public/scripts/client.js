@@ -31,7 +31,7 @@ $(document).ready(function () {
 });
 
 /**
- * Gives the elapsed time since 
+ * Gives the elapsed time since
  * @author fearofawhackplanet
  * @link https://stackoverflow.com/users/207752/fearofawhackplanet
  */
@@ -97,11 +97,12 @@ const createTweetElement = (tweetObj) => {
 
 /**
  * by using createTweetElement function appends the result to the page
- * @param {array} tweetsArr 
+ * @param {array} tweetsArr
  * @returns {object}
  */
 const renderTweets = (tweetsArr) => {
-  $.each(tweetsArr, (i, tweetObj) => {
+  let sorted = tweetsArr.sort((a, b) => a.created_at - b.created_at);
+  $.each(sorted, (i, tweetObj) => {
     // creates an article element out of each object and appends
     // it to the page section
     $("#tweets-container").append(createTweetElement(tweetObj));
@@ -135,4 +136,16 @@ $(document).ready(function () {
       created_at: 1613908170770,
     },
   ]);
+});
+
+/**
+ * Form Submission via JQuery
+ */
+$(document).ready(function () {
+  $(".tweet-form").submit(function (event) {
+    event.preventDefault();
+    let message = $(this).serialize();
+    $.post("/tweets", message);
+    $("#tweet-text").val('');
+  });
 });
