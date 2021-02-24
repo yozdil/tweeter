@@ -64,3 +64,31 @@ const renderTweets = (tweetsArr) => {
     $("#tweets-container").append(createTweetElement(tweetObj));
   });
 };
+
+// CALL THE FUNCTION TO LOAD DB
+$(document).ready(function() {
+  renderTweets([
+    {
+      "user": {
+        "name": "Newton",
+        "avatars": "https://i.imgur.com/73hZDYK.png",
+        "handle": "@SirIsaac"
+      },
+      "content": {
+        "text": "If I have seen further it is by standing on the shoulders of giants"
+      },
+      "created_at": 1613821770770
+    },
+    {
+      "user": {
+        "name": "Descartes",
+        "avatars": "https://i.imgur.com/nlhLi3I.png",
+        "handle": "@rd"
+      },
+      "content": {
+        "text": "Je pense , donc je suis"
+      },
+      "created_at": 1613908170770
+    }
+  ]);
+})
