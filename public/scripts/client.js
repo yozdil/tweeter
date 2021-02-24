@@ -77,6 +77,18 @@ const createTweetElement = (tweetObj) => {
   // returns a tweet <article> element
 };
 
+/**
+ * In the New Tweet Container shows a customized error message
+ * @param {string} Error-Message 
+ */
+const tweetError = (message) => {
+  $("#alert").text(message)
+  $("#alert").slideDown();
+  setTimeout(() => {
+    $("#alert").slideUp();
+  }, 1500);
+}
+
 $(document).ready(function () {
   /**
    * by using createTweetElement function appends the result to the page
@@ -145,9 +157,9 @@ $(document).ready(function () {
   $(".tweet-form").submit(function (event) {
     event.preventDefault();
     if ($("#tweet-text").val().length === 0) {
-      alert("We couldn't hear the humming, please type!!");
+      tweetError("We couldn't hear the humming, please type!!");
     } else if ($("#tweet-text").val().length > 140) {
-      alert("You have a lot to hum, please hum shorter!!");
+      tweetError("You have a lot to hum, please hum shorter!!");
     } else {
       let message = $(this).serialize();
       $.post("/tweets", message).then(() => {
