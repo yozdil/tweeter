@@ -68,3 +68,17 @@ form button {
   font-weight: lighter;
   font-size: 80%;
 }
+
+@media only screen and (max-width: 1000px) {
+  .new-tweet {
+    margin-bottom: 6%;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+}
