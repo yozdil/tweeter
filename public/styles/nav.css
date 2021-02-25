@@ -1,4 +1,6 @@
 nav {
+  padding-left: 1vw;
+  /* There is no padding right for the little toucan */
   position: fixed;
   z-index: 9999;
   top: 0;
