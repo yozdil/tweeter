@@ -165,6 +165,7 @@ $(document).ready(function () {
 
   /**
    * Animation to toggle composing a new tweet
+   * It also acts as scroll up :)
    */
   $(".birdie-container").on("click", (e) => {
     $(".new-tweets").slideDown();
