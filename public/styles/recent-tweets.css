@@ -5,7 +5,7 @@
   flex-direction: column;
 }
 
-article.recent-tweets {
+article.recent-tweet {
   transition: all 0.5s ease;
   display: flex;
   flex-direction: column;
@@ -27,11 +27,11 @@ article.recent-tweets {
   font-size: smaller;
 }
 
-article.recent-tweets:hover {
+article.recent-tweet:hover {
   transform: scale(1.03);
 }
 
-article.recent-tweets:hover > .tweetpost > .profile-link {
+article.recent-tweet:hover > .tweetpost > .profile-link {
   color: inherit;
 }
 
@@ -73,7 +73,7 @@ article.recent-tweets:hover > .tweetpost > .profile-link {
 
 }
 
-.recent-tweets footer {
+.recent-tweet footer {
   width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;

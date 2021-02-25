@@ -37,6 +37,7 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="./scripts/client.js"></script>
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
   </head>
 
   <body>
@@ -60,7 +61,7 @@
     </nav>
     <!-- Page-specific (main) content here -->
     <!-- Profile -->
-    <div id="main-content">
+    <div id="content-layout">
       <header class="profile">
         <div>
           <img id="profile-pic" src="./images/bird-head.png" />
@@ -73,7 +74,7 @@
 
       <main class="container">
         <!-- Compose Tweet -->
-        <section class="new-tweets">
+        <section class="new-tweet">
           <h2>Compose Tweet</h2>
           <form class="tweet-form" action="/tweets/" method="POST">
             <textarea

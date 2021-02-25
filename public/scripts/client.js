@@ -51,7 +51,7 @@ const createTweetElement = (tweetObj) => {
   // Takes in a tweet tweetObject
   return `
   <br>
-  <article class="recent-tweets">
+  <article class="recent-tweet">
   <header class="tweetpost">
     <div class="tweeter-profile">
       <img src="${tweetObj.user.avatars}" alt="Newton" />
@@ -168,7 +168,7 @@ $(document).ready(function () {
    * It also acts as scroll up :)
    */
   $(".birdie-container").on("click", (e) => {
-    $(".new-tweets").slideDown();
+    $(".new-tweet").slideDown();
     //  Resizes the container for new tweets for long messages see auto-resizer.js
     $("textarea").autoResize().focus();
   });
