@@ -35,6 +35,15 @@ article.recent-tweet:hover > .tweetpost > .profile-link {
   color: inherit;
 }
 
+.tweet-reactions{
+  transition: all 0.5s ease-in-out;
+  color: transparent;
+}
+
+article.recent-tweet:hover > footer > .tweet-reactions {
+  color: inherit;
+}
+
 .tweetpost {
   width: 100%;
   padding-left: 1rem;
