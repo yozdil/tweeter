@@ -36,11 +36,11 @@ const timeDifference = (previous) => {
 /**
  * For them malicious birds! :D
  */
-const escape =  function(str) {
-  let div = document.createElement('div');
+const escape = function (str) {
+  let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
-}
+};
 
 /**
  * From a tweet objects returns an article
@@ -79,15 +79,15 @@ const createTweetElement = (tweetObj) => {
 
 /**
  * In the New Tweet Container shows a customized error message
- * @param {string} Error-Message 
+ * @param {string} Error-Message
  */
 const tweetError = (message) => {
-  $("#alert").text(message)
+  $("#alert").text(message);
   $("#alert").slideDown();
   setTimeout(() => {
     $("#alert").slideUp();
   }, 1500);
-}
+};
 
 $(document).ready(function () {
   /**
@@ -130,12 +130,6 @@ $(document).ready(function () {
   $("#tweets-container").on("reload", loadTweets).trigger("reload");
 
   /**
-   * Resizes the container for new tweets for long messages
-   * see auto-resizer.js
-   */
-  $("textarea").autoResize();
-
-  /**
    * Character count for a new tweet
    */
   $("#tweet-text")
@@ -167,5 +161,14 @@ $(document).ready(function () {
         $("#tweet-text").val("");
       });
     }
+  });
+
+  /**
+   * Animation to toggle composing a new tweet
+   */
+  $(".birdie-container").on("click", (e) => {
+    $(".new-tweets").slideDown();
+    //  Resizes the container for new tweets for long messages see auto-resizer.js
+    $("textarea").autoResize().focus();
   });
 });
