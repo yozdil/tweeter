@@ -1,16 +1,15 @@
 .profile {
-  height: 400px;
-  width: 100%;
+  position: sticky;
+  top: 120px;
+  height: calc(100vh - 120px);
+  width: 30vw;
   background-color: #f4f1e0;
-  background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-image: url("../images/clean-gray-paper.png");
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  padding: 1%;
 }
 
 #profile-pic {
@@ -21,9 +20,9 @@
   width: 200px;
   border-radius: 50%;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  
   background-color: #f4f1e0;
-  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-image: url("../images/arches.png");
 }
 #profile-pic:hover {
   transform: scale(1.03);
@@ -38,12 +37,24 @@ header h2 {
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 1000px) {
+  .profile {
+    position: relative;
+    height: 40vh;
+    width: 100%;
+    background-color: #f4f1e0;
+    background-image: url("../images/clean-gray-paper.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+  }
+
   header {
     height: 500px;
     width: 100%;
     background-color: #f4f1e0;
-    background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    background-image: url("../images/clean-gray-paper.png");
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,8 +71,7 @@ header h2 {
     border-radius: 50%;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
     background-color: #f4f1e0;
-    background-image: url("https://www.transparenttextures.com/patterns/arches.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    background-image: url("../images/arches.png");
   }
 
   header h2 {
