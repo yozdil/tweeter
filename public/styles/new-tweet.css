@@ -16,8 +16,7 @@
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
   color: #343a35;
   background-color: #f4f1e0;
-  background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-image: url("../images/clean-gray-paper.png");
 }
 
 #tweet-text {
@@ -29,8 +28,7 @@
   margin-bottom: 0rem;
   padding: 0.9rem;
   background-color: inherit;
-  background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-image: url("../images/clean-gray-paper.png");
 }
 
 .button-counter {
