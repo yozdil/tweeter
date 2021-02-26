@@ -1,8 +1,16 @@
-# tweeter Project
+# <span style="color:firebrick">tweeter</span> Project
 
-Tweeter is a simple, single-page Twitter clone.
+This week at [Lighthouse Labs](https://www.lighthouselabs.ca/) we got our hands dirty with HTML, CSS, JS, jQuery and AJAX.
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
+tweeter is a simple, single-page Twitter clone. This one has a twist, toucans are involved!
+
+Whatever you think about the humble toucan, even with its disproportionate beak you can’t deny that isn’t a very magnificent bird.
+
+Anyways, here we go.. Voilà! <span style="color:firebrick">tweeter</span>!!
+
+## <span style="color:firebrick">tweeter</span> in Action
+
+<kbd><img src=".//docs/tweeter-in-action.gif" /></kbd>
 
 ## Getting Started
 
@@ -18,7 +26,3 @@ This repository is the starter code for the project: Students will fork and clon
 - Body-Parser
 - Chance
 - md5
-
-## tweeter in Action
-
-<kbd><img src=".//docs/tweeter-in-action.gif" /></kbd>
