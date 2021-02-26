@@ -15,7 +15,7 @@ Anyways, here we go.. Voilà! <span style="color:firebrick">tweeter</span>!!
 tweeter on your mobile phone! Our beloved toucan in the pocket! 
 
 <p align="center">
-  <img height="400" src="./docs/mobile.gif">
+  <img height="600" src="./docs/mobile.gif">
 </p>
 
 <!-- <kbd><img src="./docs/mobile.gif" /></kbd> -->
