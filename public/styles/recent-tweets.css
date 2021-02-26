@@ -34,7 +34,7 @@ article.recent-tweet:hover > .tweetpost > .profile-link {
   color: inherit;
 }
 
-.tweet-reactions{
+.tweet-reactions {
   transition: all 0.5s ease-in-out;
   color: transparent;
 }
@@ -78,7 +78,6 @@ article.recent-tweet:hover > footer > .tweet-reactions {
   margin-top: none;
   color: #343a35;
   word-break: break-word;
-
 }
 
 .recent-tweet footer {
@@ -94,7 +93,6 @@ article.recent-tweet:hover > footer > .tweet-reactions {
 .tweet-date {
   font-size: small;
 }
-
 
 @media only screen and (max-width: 1000px) {
   #tweets-container {

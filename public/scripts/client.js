@@ -172,5 +172,4 @@ $(document).ready(function () {
     //  Resizes the container for new tweets for long messages see auto-resizer.js
     $("textarea").focus().autoResize();
   });
-
 });
