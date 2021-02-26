@@ -69,14 +69,22 @@ form button {
 
 @media only screen and (max-width: 1000px) {
   .new-tweet {
+    width: 93vw;
+
     margin-bottom: 6%;
     box-sizing: border-box;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
+  .tweet-form {
+    width: 93vw;
+  }
 
-
+  #tweet-text {
+    min-height: 20vh;
+    width: 93vw;
+  }
 }

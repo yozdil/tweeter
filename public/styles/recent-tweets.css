@@ -94,3 +94,10 @@ article.recent-tweet:hover > footer > .tweet-reactions {
 .tweet-date {
   font-size: small;
 }
+
+
+@media only screen and (max-width: 1000px) {
+  #tweets-container {
+    width: 90vw;
+  }
+}

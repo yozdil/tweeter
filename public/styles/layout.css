@@ -54,7 +54,8 @@ main {
     flex-direction: column;
   }
 
-  .container {
+  /* .container {
     overflow: scroll;
-  }
+    width: 90vw;
+  } */
 }
