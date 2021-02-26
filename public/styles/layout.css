@@ -52,7 +52,6 @@ main {
   #content-layout {
     margin-top: 120px;
     flex-direction: column;
-    /* justify-content: space-between; */
   }
 
   .container {

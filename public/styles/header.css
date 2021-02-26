@@ -38,8 +38,8 @@ header h2 {
 /* MEDIA QUERIES */
 @media only screen and (max-width: 1000px) {
   .profile {
-    position: absolute;
-    top: 120px;
+    position: relative;
+    top: 0px;
     height: 40vh;
     width: 100%;
   }
