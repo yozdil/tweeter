@@ -10,7 +10,15 @@ Anyways, here we go.. Voilà! <span style="color:firebrick">tweeter</span>!!
 
 ## <span style="color:firebrick">tweeter</span> in Action
 
-<kbd><img src=".//docs/tweeter-in-action.gif" /></kbd>
+<kbd><img src="./docs/tweeter-in-action.gif" /></kbd>
+
+tweeter on your mobile phone! Our beloved toucan in the pocket! 
+
+<p align="center">
+  <img height="400" src="./docs/mobile.gif">
+</p>
+
+<!-- <kbd><img src="./docs/mobile.gif" /></kbd> -->
 
 ## Getting Started
 
