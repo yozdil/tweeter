@@ -17,18 +17,16 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 100%;
+  font-family: "Poppins";
 }
 
 html body {
-  height: 100%;
   background-color: #343a35;
-  font-family: "Poppins";
   color: black;
   font-size: 24px;
 }
 
 html #content-layout {
-  margin-top: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,10 +34,13 @@ html #content-layout {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-top: 120px;
 }
 
 html #content-layout main {
-  width: 90%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #f4f1e0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,19 +52,17 @@ html #content-layout main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: auto;
+  width: 90%;
 }
 
 @media only screen and (max-width: 1000px) {
   html #content-layout {
-    margin-top: 120px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-top: 120px;
   }
 }
 /*# sourceMappingURL=layout.css.map */
