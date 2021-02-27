@@ -1,0 +1,59 @@
+$primary-color: #f4f1e0;
+$secondary-color: #343a35;
+
+.profile {
+  position: sticky;
+  top: 120px;
+  height: calc(100vh - 120px);
+  width: 30vw;
+  background-color: $primary-color;
+  background-image: url("../images/clean-gray-paper.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+  #profile-pic {
+    transition: all 0.5s ease;
+    border-style: solid;
+    border-color: rgba(173, 15, 0, 0.75);
+    min-height: auto;
+    width: 15vw;
+    border-radius: 50%;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+    background-image: url("../images/arches.png");
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+  h2 {
+    font-size: 2vw;
+    padding: 0;
+    box-sizing: border-box;
+    color: $secondary-color;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .profile {
+    position: relative;
+    top: 0px;
+    height: 40vh;
+    width: 100%;
+    #profile-pic {
+      width: 25vh;
+      border-radius: 50%;
+      box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2),
+        0px 0px 50px rgba(0, 0, 0, 0.2);
+      background-color: $primary-color;
+      background-image: url("../images/arches.png");
+      flex-shrink: 1;
+    }
+    h2 {
+      margin: 0px;
+      font-size: smaller;
+      display: flex;
+      flex-shrink: 1;
+    }
+  }
+}
