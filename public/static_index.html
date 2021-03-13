@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Information -->
+    <title>Tweeter - Home Page</title>
+
+    <!-- External CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      type="text/css"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <script
+      src="https://kit.fontawesome.com/0dace9ff45.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- App CSS -->
+    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/recent-tweets.css" type="text/css" />
+
+    <!-- External JS -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/auto-resizer.js"></script> -->
+
+    <!-- App JS -->
+    <!-- <script type="text/javascript" src="./scripts/client.js"></script> -->
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+  </head>
+
+  <body>
+    <!-- Top nav bar (fixed) -->
+    <nav>
+      <div>
+        <span class="logo">tweeter</span>
+      </div>
+      <div class="birdie-container">
+        <span id="compose-tweet">Compose your thoughts!</span>
+
+        <img
+          class="birdie"
+          src="./images/bird-head.png"
+          alt="bird"
+          width="120"
+        />
+      </div>
+    </nav>
+    <!-- Page-specific (main) content here -->
+    <!-- Profile -->
+    <div id="content-layout">
+      <header class="profile">
+        <div>
+          <img id="profile-pic" src="./images/bird.png" />
+        </div>
+        <br />
+          <h2>Mr. Toucan</h2>
+      </header>
+
+      <main class="container">
+        <!-- Compose Tweet -->
+        <section class="new-tweet">
+          <h2>Compose Tweet</h2>
+          <form class="tweet-form" action="/tweets/" method="POST">
+            <textarea
+              placeholder="What are you humming about?"
+              name="text"
+              id="tweet-text"
+            ></textarea>
+            <!-- Error -->
+            <span id="alert" hidden>ERROR</span>
+            <div class="button-counter">
+              <button id="post-tweet" type="submit">
+                <i class="fas fa-feather-alt"></i> Tweet
+              </button>
+              <output name="counter" class="counter" for="tweet-text"
+                >140</output
+              >
+            </div>
+          </form>
+        </section>
+
+        <!-- Tweets -->
+        <section id="tweets-container">
+          <!-- Any tweet gets posted here! -->
+          <article class="recent-tweet">
+            <header class="tweetpost">
+              <div class="tweeter-profile">
+                <img src="https://i.imgur.com/nlhLi3I.png" alt="Newton">
+                <h3>Descartes</h3>
+              </div>
+              <h3 class="profile-link">@rd</h3>
+            </header>
+            <div class="content">
+              <p>
+                Je pense , donc je suis
+              </p>
+            </div>
+            <footer>
+              <p class="tweet-date">1 days ago</p>
+              <div class="tweet-reactions">
+                <i class="fab fa-font-awesome-flag" aria-hidden="true"></i>
+                <i class="fas fa-retweet" aria-hidden="true"></i>
+                <i class="fas fa-heart" aria-hidden="true"></i>
+              </div>
+            </footer>
+          </article>
+
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
